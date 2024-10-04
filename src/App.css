@@ -1,0 +1,109 @@
+/* movil */
+@media (max-width: 767px){
+  .laptop { display: none; }
+  .tablet { display: none; }
+  .desktoplg { display: none; }
+  .desktopsm { display: none; }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 990px) {
+  .laptop { display: none; }
+  .mobile { display: none; }
+  .desktoplg { display: none; }
+  .desktopsm { display: none; }
+}
+
+/* laptop */
+@media (min-width: 991px) and (max-width: 1309px){
+  .tablet { display: none; }
+  .mobile { display: none; }
+  .desktoplg { display: none; }
+  .desktopsm { display: none; }
+}
+
+/* Escritorio pequeña */
+@media (min-width: 1310px) and (max-width: 1919px){
+  .tablet { display: none; }
+  .mobile { display: none; }
+  .laptop { display: none; }
+  .desktoplg { display: none; }
+}
+
+/* Escritorio larga */
+@media (min-width: 1920px){
+  .tablet { display: none; }
+  .mobile { display: none; }
+  .laptop { display: none; }
+  .desktopsm { display: none; }
+}
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+} 
+
+.body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  
+}
+
+hr{
+  margin: 6% 0% 6% 25%;
+  border-bottom-width: 3px;
+  width: 50%;
+  border-color: rgb(255,230,0);
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+  overflow: hidden;
+  display: none;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+@font-face{
+  font-family:artegra-200;
+  src: url(./media/fonts/Fontspring-DEMO-artegra_sans-200-extralight.otf)
+}
+
+@font-face {
+  font-family: artegra-400;
+  src: url(./media/fonts/Fontspring-DEMO-artegra_sans-400-regular.otf);
+}
+
+@font-face {
+  font-family: artegra-600;
+  src: url(./media/fonts/Fontspring-DEMO-artegra_sans-600-semibold.otf);
+}
+
+/* Roboto */
+
+@font-face{
+  font-family: Roboto-Regular;
+  src: url(./media/fonts/Roboto-Regular.ttf)
+}
+
+@font-face{
+  font-family: Roboto-Light;
+  src: url(./media/fonts/Roboto-Light.ttf)
+}
+
+/* Montserrat */
+
+@font-face{
+  font-family: Montserrat-Medium;
+  src: url(./media/fonts/Montserrat-Medium.ttf)
+}

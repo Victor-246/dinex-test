@@ -58,6 +58,7 @@ hr{
   border-bottom-width: 3px;
   width: 50%;
   border-color: rgb(255,230,0);
+  background-color: rgb(255,255,255);
 }
 
 /* scrollbar */
@@ -75,7 +76,7 @@ hr{
 }
 
 @font-face{
-  font-family:artegra-200;
+  font-family: artegra-200;
   src: url(./media/fonts/Fontspring-DEMO-artegra_sans-200-extralight.otf)
 }
 
@@ -106,4 +107,9 @@ hr{
 @font-face{
   font-family: Montserrat-Medium;
   src: url(./media/fonts/Montserrat-Medium.ttf)
+}
+
+@font-face{
+  font-family: Montserrat-ExtraBold;
+  src: url(./media/fonts/Montserrat-ExtraBold.ttf)
 }

@@ -64,7 +64,7 @@ export default function Main() {
         </div>
         <div class="desktopsm">
           <meta name='viewport' content='width=device-width , initial-scale=1' /><meta name='viewport' content='width=device-width , initial-scale=1' />
-          <Flex backgroundColor='rgb(23,25,38)' h='100%' w='100%' position='absolute'>
+          <Flex backgroundColor='rgb(23,25,38)' h='100%' w='100%' position='absolute' back>
           </Flex>
         </div>
         <div class="laptop">

@@ -49,113 +49,131 @@ export default function Suministros() {
             <ChakraProvider>
                 <div class="desktoplg">
                     <Header />
-                    <Stack textAlign='center' margin='0' width='100%' height='90vh' bgColor='white' overflow='auto'>
+                    <Stack overflowX='hidden' objectFit='cover' display='block' columnGap='0' padding='0' margin='0' width='100%' height='90vh' bgColor='white' overflow='auto'>
                         <Whatsapp />
-                        <Heading letterSpacing='0.20VW' margin='2% 0 2% 0'>SUMINISTROS INDUSTRIALES</Heading>
-                        <Center><Text letterSpacing='0.10VW' fontFamily='Roboto-Regular' w='75%' fontSize='29px' fontWeight='bold'>Nuestra misión es solucionar cualquier tipo de requerimiento dentro de la cadena de suministro, ofreciendo óptimas alternativas enfocadas en las necesidades de nuestros clientes.</Text></Center>
-                        <hr />
-                        <HStack width='100%' justify='center'>
-                            <VStack w='99%'>
-                                <HStack w='86.5%' justify='center'>
-                                    <Image w='7%' src={plomeria} alt='plomeria'></Image>
-                                    <Spacer />
-                                    <Image w='7%' src={herramientas} alt='herramientas'></Image>
-                                    <Spacer />
-                                    <Image w='7%' src={materialelectrico} alt='materialelectrico'></Image>
-                                    <Spacer />
-                                    <Image w='7%' src={calefaccion} alt='calefaccion'></Image>
-                                    <Spacer />
-                                    <Image w='7%' src={seguridad} alt='seguridad'></Image>
-                                </HStack>
-                                <HStack margin='-7% 0 0 0' w='100%' alignItems='start' fontFamily='Roboto-Regular' fontWeight='bold' color='rgb(100,100,100)' fontSize='27px' letterSpacing='0.16vw'>
-                                    <Text w='100%' margin='8% 0 6% 0'>Plomería</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Herramientas</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Material Eléctrico</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Calefacción-Refrigeración</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Seguridad Industrial</Text>
-                                </HStack>
-                                <HStack w='82.8%' justify='center'>
-                                    <Image w='7.5%' src={articulos} alt='articulos'></Image>
-                                    <Spacer />
-                                    <Image w='7.5%' src={limpieza} alt='cubrimos'></Image>
-                                    <Spacer />
-                                    <Image w='7.5%' src={materialconstruccion} alt='adaptamos'></Image>
-                                    <Spacer />
-                                    <Image w='7.5%' src={pintura} alt='adaptamos'></Image>
-                                </HStack>
-                                <HStack margin='-7% 0 0 0' w='100%' alignItems='start' fontFamily='Roboto-Regular' fontWeight='bold' color='rgb(100,100,100)' fontSize='27px' letterSpacing='0.16vw'>
-                                    <Text w='100%' margin='8% 0 6% 0'>Artículos de Oficina</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Limpieza</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Material para Construcción</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>Pintura y Adhesivos</Text>
-                                </HStack>
-                            </VStack>
+                        <HStack justify='center' margin='0' p='0' position='relative' columnGap='0'>
+                            <Box bgImage={suministros} bgRepeat='no-repeat' color='white' bgSize='cover' bgPosition='center' w='100%' h='50vh'></Box>
+                            <Box h='100%' bgColor='rgba(0,0,0,0.2)' position='absolute' width='100%'>
+                                <Flex w='100%' height='100%' alignItems='center' textAlign='right' justify='right'>
+                                    <Box w='100%' h='min-content'><Text marginRight='12%' lineHeight='80px' color='white' fontSize='80px' fontWeight='bold' fontFamily='Montserrat-ExtraBold'>Nuestros<br /><Text as='span' color='rgb(255,230,0)'>Suministros Industriales</Text></Text></Box>
+                                </Flex>
+                            </Box>
                         </HStack>
-                        <hr />
-                        <VStack w='100%' height='auto' justify='center'>
+                        <Center><Heading w='100%' bgColor='rgb(23,25,38)' color='rgb(255,230,0)' padding='2%' marginBottom='1.5%' letterSpacing='0.10vw' fontSize='2xl' fontFamily='artegra-600' textAlign='center'>Nuestra misión es solucionar cualquier tipo de requerimiento dentro de la cadena de suministro, ofreciendo óptimas alternativas enfocadas en las necesidades de nuestros clientes.</Heading></Center>
+                        <br />
+                        <VStack w='100%'>
+                            <VStack w='90%' alignItems='left' textAlign='justify' marginBottom='4%'>
+                                <Text marginLeft='5%' letterSpacing='4px' fontFamily='Roboto-Light' fontWeight='bold' fontSize='4xl'>GARANTÍA DE<br /><Text as='span' fontFamily='Roboto-Regular' fontWeight='bold'>CÁLIDAD</Text></Text>
+                                <Text fontSize='3xl' fontFamily='Roboto-Regular' lineHeight='35px' letterSpacing='0.08vw' color='rgb(100,100,100)'>
+                                    Aseguramos nuestro servicio de control de calidad de tal manera que le permita garantizar que sus materiales, productos, maquinaria, equipamiento e instalaciones industriales han sido producidas de conformidad con todos los requisitos especificados.<br /><br />
+                                    Nuestro proceso de garantía es llevado a cabo a través de una inspección rigurosa en los medios de producción para evaluar la calidad de nuestros productos junto al cumplimiento de todas las especificaciones contractuales, regulaciones obligatorias y normas de calidad.<br /><br />
+                                    Utiliza nuestros canales de contacto para descubrir como nuestros servicios con calidad de punta pueden ayudarle a asegurar suministros industriales listos para su operación.
+                                </Text>
+                            </VStack>
                             <VStack w='100%'>
-                                <VStack marginLeft='2%' w='93%' alignItems='left' textAlign='left' fontFamily='Roboto-Regular' letterSpacing='0.8px'>
-                                    <Text w='fit-content' marginLeft='35%' letterSpacing='4px' fontFamily='Roboto-Light' fontWeight='bold' fontSize='46px'>GARANTÍA DE<br /><Heading fontSize='52px'>CÁLIDAD</Heading></Text>
-                                    <Text fontSize='36px' lineHeight='38px' letterSpacing='1px' color='rgb(130,130,130)'>
-                                        <Image float="left" width='30%' margin='0 1% 1% 0' height='fit-content' src={comunicate} alt='comunicate'></Image>Aseguramos nuestro servicio de control de calidad de tal manera que le permita garantizar que sus materiales, productos, maquinaria, equipamiento e instalaciones industriales han sido producidas de conformidad con todos los requisitos especificados.<br /><br />
-                                        Nuestro proceso de garantía es llevado a cabo a través de una inspección rigurosa en los medios de producción para evaluar la calidad de nuestros productos junto al cumplimiento de todas las especificaciones contractuales, regulaciones obligatorias y normas de calidad.<br /><br />
-                                        Utiliza nuestros canales de contacto para descubrir como nuestros servicios con calidad de punta pueden ayudarle a asegurar suministros industriales listos para su operación.
-                                    </Text><br />
+                                <VStack w='90%' textAlign='center' color='rgb(100,100,100)' fontFamily='Roboto-Regular' fontSize='3xl' letterSpacing='1px'>
+                                    <HStack w='100%' justify='center' marginBottom='3%' alignItems='start'>
+                                        <VStack w='100%'>
+                                            <Image w='21%' src={plomeria} alt='plomeria'></Image>
+                                            <Text>Plomería</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='21%' src={calefaccion} alt='calefaccion'></Image>
+                                            <Text>Calefacción-Refrigeración</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='21%' src={limpieza} alt='herramientas'></Image>
+                                            <Text>Limpieza</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='21%' src={herramientas} alt='herramientas'></Image>
+                                            <Text>Herramientas</Text>
+                                        </VStack>
+                                    </HStack>
+                                    <HStack w='100%' justify='center' alignItems='start'>
+                                        <VStack w='100%'>
+                                            <Image w='25%' src={seguridad} alt='seguridad'></Image>
+                                            <Text>Seguridad Industrial</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='25%' src={materialconstruccion} alt='materialconstruccion'></Image>
+                                            <Text>Material para Construcción</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='25%' src={materialelectrico} alt='materialelectrico'></Image>
+                                            <Text>Material Eléctrico</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='25%' src={articulos} alt='articulos'></Image>
+                                            <Text>Artículos de Oficina</Text>
+                                        </VStack>
+                                        <VStack w='100%'>
+                                            <Image w='25%' src={pintura} alt='pintura'></Image>
+                                            <Text>Pintura y Adhesivos</Text>
+                                        </VStack>
+                                    </HStack>
                                 </VStack>
                             </VStack>
                         </VStack>
                         <hr />
-                        <HStack width='100%' justify='center'>
-                            <VStack w='96%'>
-                                <HStack w='85%' justify='center'>
-                                    <Image w='11%' src={impulsamos} alt='impulsamos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={optimizamos} alt='optimizamos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={conectamos} alt='conectamos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={creamos} alt='creamos'></Image>
-                                </HStack>
-                                <HStack margin='-7% 0 -6% 0' w='100%' fontFamily='Roboto-Regular' fontWeight='bold' color='rgb(100,100,100)' fontSize='28px' letterSpacing='0.32vw' alignItems='start'>
-                                    <Text w='100%' margin='8% 0 6% 0'>IMPULSAMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>OPTIMIZAMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>CONECTAMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>CREAMOS</Text>
-                                </HStack>
-                                <HStack w='100%' fontFamily='Roboto-Regular' color='rgb(100,100,100)' fontSize='28px' letterSpacing='0.07vw' alignItems='start'>
-                                    <Text w='100%'>A las empresas cuyo desempeño comercial depende de cadenas de suministros.</Text>
-                                    <Text w='100%'>Tu suministro de principio a fin con nuestra experiencia en logística a nivel nacional.</Text>
-                                    <Text w='100%'>Las operaciones de forma eficiente al alinear nuestra estrategia comercial con tus objetivos.</Text>
-                                    <Text w='100%'>Procesos eficientes, estables y confiables.</Text>
-                                </HStack><br />
-                                <HStack w='85%' justify='center'>
-                                    <Image w='11%' src={suministramos} alt='suministramos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={apoyamos} alt='apoyamos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={cubrimos} alt='cubrimos'></Image>
-                                    <Spacer />
-                                    <Image w='11%' src={adaptamos} alt='adaptamos'></Image>
-                                </HStack>
-                                <HStack margin='-7% 0 -6% 0' w='100%' fontFamily='Roboto-Regular' fontWeight='bold' color='rgb(100,100,100)' fontSize='28px' letterSpacing='0.32vw' alignItems='start'>
-                                    <Text w='100%' margin='8% 0 6% 0'>SUMINISTRAMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>APOYAMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>CUBRIMOS</Text>
-                                    <Text w='100%' margin='8% 0 6% 0'>ADAPTAMOS</Text>
-                                </HStack>
-                                <HStack w='100%' fontFamily='Roboto-Regular' color='rgb(100,100,100)' fontSize='28px' letterSpacing='0.07vw' alignItems='start'>
-                                    <Text w='100%'>Entrega de soluciones industriales inteligentes y optimizadas.</Text>
-                                    <Text w='100%'>Para lograr sus objetivos y obtener una ventaja competitiva dentro de su sector industrial.</Text>
-                                    <Text w='100%'>Una amplia gama de servicios a lo largo de la cadena industrial.</Text>
-                                    <Text w='100%'>Nuestro sistema de trabajo a tus necesidades.</Text>
-                                </HStack>
-                            </VStack>
+                        <HStack w='100%' justify='center'>
+                            <HStack w='95%' alignItems='start' fontSize='2xl' lineHeight='28px' textAlign='center' color='rgb(100,100,100)' fontFamily='Roboto-Regular'>
+                                <VStack w='100%'>
+                                    <Image width='24%' src={impulsamos} alt='impulsamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>IMPULSAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>A las empresas cuyo desempeño comercial depende de cadenas de suministros.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={optimizamos} alt='conectamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>OPTIMIZAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Tu suministro de principio a fin con nuestra experiencia en logística a nivel nacional.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={conectamos} alt='conectamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>CONECTAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Las operaciones de forma eficiente al alinear nuestra estrategia comercial con tus objetivos.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={creamos} alt='creamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>CREAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Procesos eficientes, estables y confiables.</Text>
+                                </VStack>
+                            </HStack>
+                        </HStack>
+                        <HStack width='100%' justify='center' marginTop='3%'>
+                            <HStack w='95%' alignItems='start' fontSize='2xl' lineHeight='28px' textAlign='center' color='rgb(100,100,100)' fontFamily='Roboto-Regular'>
+                                <VStack w='100%'>
+                                    <Image width='24%' src={suministramos} alt='suministramos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>SUMINISTRAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Entrega de soluciones industriales inteligentes y optimizadas.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={apoyamos} alt='apoyamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>APOYAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Para lograr sus objetivos y obtener una ventaja competitiva dentro de su sector industrial.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={cubrimos} alt='cubrimos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>CUBRIMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Una amplia gama de servicios a lo largo de la cadena industrial.</Text>
+                                </VStack>
+                                <Spacer />
+                                <VStack w='100%'>
+                                    <Image width='24%' src={adaptamos} alt='adaptamos'></Image>
+                                    <Text w='100%' marginTop='2%' fontWeight='bold' letterSpacing='0.36vw'>ADAPTAMOS</Text>
+                                    <Text w='100%' letterSpacing='0.08vw'>Nuestro sistema de trabajo a tus necesidades.</Text>
+                                </VStack>
+                            </HStack>
                         </HStack>
                         <hr />
-                        <Catalogo />
-                        <VStack marginTop='8%'>
-                            <Heading fontSize='46px' letterSpacing='2px'>BENEFICIOS</Heading>
-                            <Text fontSize='38px' letterSpacing='0.8px' fontFamily='Roboto-Light'>Le damos a tu industria el giro que <b>necesitas.</b></Text>
+                        <VStack>
+                            <Heading fontSize='4xl' letterSpacing='2px'>BENEFICIOS</Heading>
+                            <Text fontSize='3xl' letterSpacing='0.8px' fontFamily='Roboto-Light'>Le damos a tu industria el giro que <b>necesitas</b></Text>
                         </VStack>
                         <Foot />
                     </Stack>
